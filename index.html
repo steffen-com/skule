@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IM chat</title>
+  <title>Skule</title>
   <link rel="stylesheet" href="Recurcar/css/main.css">
 </head>
 
@@ -20,7 +20,22 @@
       <div class="box">
         <div>
           <label>Navn</label> <br>
-          <input id="name" type="text"> <br> <br>
+          <input id="fname" type="text"> <br> <br>
+        </div>
+
+        <div>
+          <label>Etter navn</label> <br>
+          <input id="lname" type="text"> <br> <br>
+        </div>
+
+        <div>
+          <label>zip</label> <br>
+          <input id="zip" type="text"> <br> <br>
+        </div>
+
+        <div>
+          <label>city</label> <br>
+          <input id="city" type="text"> <br> <br>
         </div>
 
         <div>
@@ -38,6 +53,65 @@
     </div>
   </div>
 
+  <div class="grid-container">
+    <div>
+        <a href="register.html">Legg til bruker</a>
+        <table class="users" id="usertable">
+            <tr>
+                <th>
+                    Fornavn
+                </th>
+                <th>
+                    Etternavn
+                </th>
+                <th>
+                    Adresse
+                </th>
+                <th>
+                    Postnr
+                </th>
+                <th>
+                    Poststed
+                </th>
+                <th>
+                    Endre
+                </th>
+                <th>
+                    Slett
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div id="userform">
+        <div>
+            <label>Fornavn:</label><br>
+            <input id="fname" type="text">
+        </div>
+        <div>
+            <label>Etternavn:</label><br>
+            <input id="lname" type="text">
+        </div>
+        <div>
+            <label>Adresse:</label><br>
+            <input id="address" type="text">
+        </div>
+        <div>
+            <label>Postnr:</label><br>
+            <input id="zip" type="number" maxlength="4">
+        </div>
+        <div>
+            <label>Poststed:</label><br>
+            <input id="city" type="text">
+        </div>
+
+        <div class="signUpBox">
+            <button id="btnUpdate" onclick="">Lagre endringer</button>
+        </div>
+
+    </div>
+</div>
+
+
   <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore-compat.js"></script>
@@ -45,6 +119,7 @@
   <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore-compat.js"></script>
 
   <script src="Recurcar/js/endre.js"></script>
+  <script src="Recurcar/js/lag-bruker.js"></script>
 
 </body>
 
