@@ -46,3 +46,43 @@ button {
     background-color: rgb(21, 255, 204);
     box-shadow: 10px 10px lightblue;
 }
+
+body  {
+    background-color:rgb(255, 255, 255);
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 1390px;
+    margin:auto;
+}
+
+#userform {
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+
+#tableLink {
+    color: blue; 
+}
+
+#tableLink:hover {
+    cursor:pointer;
+}
+
+.users {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.users td {
+    border: 1px solid gray;
+    padding: 10px;
+}

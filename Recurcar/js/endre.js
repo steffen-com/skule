@@ -56,7 +56,7 @@ function updateUser(docid) {
         .then(() => {
             console.log("Document successfully updated!");
             // Redirecter til users.html 
-            window.location.href = "./users.html";
+            window.location.href = "./index.html";
         })
         .catch((error) => {
             // The document probably doesn't exist.

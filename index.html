@@ -10,52 +10,10 @@
 </head>
 
 <body>
-  <div>
-    <h1 class="h1Style">Velkommen til IM Chat</h1>
-
-  </div>
-  <div class="grid">
-    <div class="gridItem"></div>
-    <div class="gridItem">
-      <div class="box">
-        <div>
-          <label>Navn</label> <br>
-          <input id="fname" type="text"> <br> <br>
-        </div>
-
-        <div>
-          <label>Etter navn</label> <br>
-          <input id="lname" type="text"> <br> <br>
-        </div>
-
-        <div>
-          <label>zip</label> <br>
-          <input id="zip" type="text"> <br> <br>
-        </div>
-
-        <div>
-          <label>city</label> <br>
-          <input id="city" type="text"> <br> <br>
-        </div>
-
-        <div>
-          <label>Passord</label> <br>
-          <input id="password" type="password"> <br> <br>
-        </div>
-
-        <div>
-          <label>E-post Adresse</label> <br>
-          <input id="email" type="email"> <br> <br>
-        </div>
-        <button onclick="signUp()">lag bruker</button> <br> <br>
-        <button onclick="window.location.href = 'logg-in.html';">Logg inn</button>
-      </div>
-    </div>
-  </div>
 
   <div class="grid-container">
     <div>
-        <a href="register.html">Legg til bruker</a>
+
         <table class="users" id="usertable">
             <tr>
                 <th>
@@ -111,6 +69,58 @@
     </div>
 </div>
 
+  <div>
+    <h1 class="h1Style">Skule database</h1>
+
+  </div>
+  <div class="grid">
+    <div class="gridItem"></div>
+    <div class="gridItem">
+      <div class="box">
+        <div>
+          <label>Navn</label> <br>
+          <input id="fname" type="text"> <br> <br>
+        </div>
+
+        <div>
+          <label>Etter navn</label> <br>
+          <input id="lname" type="text"> <br> <br>
+        </div>
+
+        <div>
+          <label>Postnr</label> <br>
+          <input id="zip" type="text"> <br> <br>
+        </div>
+
+        <div>
+          <label>Adresse</label> <br>
+          <input id="Address" type="text"> <br> <br>
+        </div>
+
+        <div>
+          <label>Poststed</label> <br>
+          <input id="city" type="text"> <br> <br>
+        </div>
+
+        <div>
+          <label>Passord</label> <br>
+          <input id="password" type="password"> <br> <br>
+        </div>
+
+        <div>
+          <label>E-post Adresse</label> <br>
+          <input id="email" type="email"> <br> <br>
+        </div>
+        <button onclick="signUp()">lag bruker</button> <br> <br>
+        <button onclick="window.location.href = 'logg-in.html';">Logg inn</button>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
 
   <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app-compat.js"></script>
@@ -119,7 +129,8 @@
   <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore-compat.js"></script>
 
   <script src="Recurcar/js/endre.js"></script>
-  <script src="Recurcar/js/lag-bruker.js"></script>
+
+  
 
 </body>
 
