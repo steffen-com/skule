@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Recurcar/css/main.css">
+</head>
+<body>
+    <ul class="meny">
+        <li><a class="li" href="lag-bruker.html">Lag bruker</a></li>
+        <li><a class="li" href="index.html">Endre</a></li>
+    </ul>
+    
+    <div>
+        <h1 class="h1Style">Skule database</h1>
+    
+      </div>
+      <div class="grid">
+        <div class="gridItem"></div>
+        <div class="gridItem">
+          <div class="box">
+            <div>
+              <label>Navn</label> <br>
+              <input id="fname" type="text"> <br> <br>
+            </div>
+    
+            <div>
+              <label>Etter navn</label> <br>
+              <input id="lname" type="text"> <br> <br>
+            </div>
+    
+            <div>
+              <label>Postnr</label> <br>
+              <input id="zip" type="text"> <br> <br>
+            </div>
+    
+            <div>
+              <label>Adresse</label> <br>
+              <input id="Address" type="text"> <br> <br>
+            </div>
+    
+            <div>
+              <label>Poststed</label> <br>
+              <input id="city" type="text"> <br> <br>
+            </div>
+    
+            <div>
+              <label>Passord</label> <br>
+              <input id="password" type="password"> <br> <br>
+            </div>
+    
+            <div>
+              <label>E-post Adresse</label> <br>
+              <input id="email" type="email"> <br> <br>
+            </div>
+            <button onclick="signUp()">lag bruker</button> <br> <br>
+          </div>
+        </div>
+      </div>
+    
+      
+    
+    
+    
+    
+      <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-auth-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore-compat.js"></script>
+    
+      <script src="Recurcar/js/lag-bruker.js"></script>
+</body>
+</html>
